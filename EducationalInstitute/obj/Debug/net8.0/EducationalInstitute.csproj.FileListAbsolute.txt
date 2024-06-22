@@ -250,3 +250,4 @@ D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\ref
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.pdb
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.genruntimeconfig.cache
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\ref\EducationalInstitute.dll
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.sourcelink.json

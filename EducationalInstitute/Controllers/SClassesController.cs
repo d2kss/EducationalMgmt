@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class SClassesController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public SClassesController(EducationalInstituteContext context)
+        public SClassesController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,7 +23,8 @@ namespace EducationalInstitute.Controllers
         // GET: SClasses
         public async Task<IActionResult> Index()
         {
-            return View(await _context.SClass.ToListAsync());
+            List<SClass> lstClasses = _context.ClassRepository.GetAll().ToList();
+            return View(lstClasses);
         }
 
         // GET: SClasses/Details/5
@@ -33,8 +35,8 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var sClass = await _context.SClass
-                .FirstOrDefaultAsync(m => m.ClassId == id);
+            var sClass =  _context.ClassRepository
+                .Get(m => m.ClassId == id);
             if (sClass == null)
             {
                 return NotFound();
@@ -61,8 +63,8 @@ namespace EducationalInstitute.Controllers
                 sClass.IsActive = 'Y';
                 sClass.CreatedBy = "Admin";
                 sClass.CreatedDate = DateTime.Now;
-                _context.Add(sClass);
-                await _context.SaveChangesAsync();
+                _context.ClassRepository.Add(sClass);
+                 _context.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(sClass);
@@ -76,7 +78,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var sClass = await _context.SClass.FindAsync(id);
+            var sClass = _context.ClassRepository.Get(u=>u.ClassId==id);
             if (sClass == null)
             {
                 return NotFound();
@@ -102,8 +104,8 @@ namespace EducationalInstitute.Controllers
                 {
                     sClass.UpdatedBy = "Admin";
                     sClass.UpdatedDate = DateTime.Now;  
-                    _context.Update(sClass);
-                    await _context.SaveChangesAsync();
+                    _context.ClassRepository.Update(sClass);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -129,8 +131,8 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var sClass = await _context.SClass
-                .FirstOrDefaultAsync(m => m.ClassId == id);
+            var sClass =  _context.ClassRepository
+                .Get(m => m.ClassId == id);
             if (sClass == null)
             {
                 return NotFound();
@@ -144,19 +146,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var sClass = await _context.SClass.FindAsync(id);
+            var sClass = _context.ClassRepository.Get(u => u.ClassId == id);
             if (sClass != null)
             {
-                _context.SClass.Remove(sClass);
+                _context.ClassRepository.Remove(sClass);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SClassExists(int id)
         {
-            return _context.SClass.Any(e => e.ClassId == id);
+            return _context.ClassRepository.Get(e => e.ClassId == id).ClassId>0;
         }
     }
 }

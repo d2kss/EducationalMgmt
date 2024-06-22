@@ -1,13 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using EducationalInstitute.Data;
+using EducationalInstitute.Repository.Interface;
+using EducationalInstitute.Repository;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<EducationalInstituteContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("EducationalInstituteContext") ?? throw new InvalidOperationException("Connection string 'EducationalInstituteContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
