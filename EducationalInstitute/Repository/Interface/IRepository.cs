@@ -11,5 +11,7 @@ namespace EducationalInstitute.Repository.Interface
         void Update(T entity);
 
         void RemoveRange(IEnumerable<T> entity);
+
+        IQueryable<T> Include(params Expression<Func<T, object>>[] includes);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using EducationalInstitute.Data;
 using EducationalInstitute.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query;
 using System.Linq.Expressions;
 
 namespace EducationalInstitute.Repository
@@ -46,6 +47,22 @@ namespace EducationalInstitute.Repository
         {
             dbSet.Attach(entity);
             _Context.Entry(entity).State = EntityState.Modified;
+        }
+
+        public IQueryable<T> Include(params Expression<Func<T, object>>[] includes)
+        {
+            IIncludableQueryable<T, object> query = null;
+
+            if (includes.Length > 0)
+            {
+                query = dbSet.Include(includes[0]);
+            }
+            for (int queryIndex = 1; queryIndex < includes.Length; ++queryIndex)
+            {
+                query = query.Include(includes[queryIndex]);
+            }
+
+            return query == null ? dbSet : (IQueryable<T>)query;
         }
     }
 }

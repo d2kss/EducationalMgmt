@@ -1,3 +1,12 @@
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.csproj.AssemblyReference.cache
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.GeneratedMSBuildEditorConfig.editorconfig
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.AssemblyInfoInputs.cache
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.AssemblyInfo.cs
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.csproj.CoreCompileInputs.cache
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.MvcApplicationPartsAssemblyInfo.cache
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.RazorAssemblyInfo.cache
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.RazorAssemblyInfo.cs
+D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.sourcelink.json
 D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\appsettings.Development.json
 D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\appsettings.json
 D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\EducationalInstitute.staticwebassets.runtime.json
@@ -226,14 +235,6 @@ D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\run
 D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\d2kss products\EducationalInstitute\EducationalInstitute\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.csproj.AssemblyReference.cache
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.GeneratedMSBuildEditorConfig.editorconfig
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.AssemblyInfoInputs.cache
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.AssemblyInfo.cs
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.csproj.CoreCompileInputs.cache
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.MvcApplicationPartsAssemblyInfo.cache
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.RazorAssemblyInfo.cache
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.RazorAssemblyInfo.cs
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\staticwebassets.build.json
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\staticwebassets.development.json
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\staticwebassets\msbuild.EducationalInstitute.Microsoft.AspNetCore.StaticWebAssets.props
@@ -250,4 +251,3 @@ D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\ref
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.pdb
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.genruntimeconfig.cache
 D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\ref\EducationalInstitute.dll
-D:\d2kss products\EducationalInstitute\EducationalInstitute\obj\Debug\net8.0\EducationalInstitute.sourcelink.json

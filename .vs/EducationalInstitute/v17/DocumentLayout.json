@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "D:\\d2kss products\\EducationalInstitute\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\sclassescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\sclassescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\sectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\sectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\sclassescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\sclassescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\examscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\repository\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\repository\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\feescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\repository\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\repository\\interface\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\models\\fees.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\views\\fees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -69,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\views\\subjects\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\models\\sclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -143,16 +151,8 @@
       "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\views\\sclasses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|solutionrelative:educationalinstitute\\controllers\\teacherscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5C7B1FB-4F12-48F5-8DC1-CECD9E9D9BE1}|EducationalInstitute\\EducationalInstitute.csproj|d:\\d2kss products\\educationalinstitute\\educationalinstitute\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,7 +182,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Repository\\UnitOfWork.cs",
@@ -198,92 +198,60 @@
               "RelativeToolTip": "EducationalInstitute\\Repository\\UnitOfWork.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAAAgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:21:23.52Z"
+              "WhenOpened": "2024-06-22T07:21:23.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Program.cs",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Program.cs",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Program.cs",
-              "RelativeToolTip": "EducationalInstitute\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:20:38.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
-              "RelativeToolTip": "EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:11:17.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Repository.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Repository\\Repository.cs",
               "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Repository.cs",
               "RelativeToolTip": "EducationalInstitute\\Repository\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAZAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADMAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:09:39.873Z"
+              "WhenOpened": "2024-06-22T07:09:39.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Interface\\IRepository.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Repository\\Interface\\IRepository.cs",
               "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Interface\\IRepository.cs",
               "RelativeToolTip": "EducationalInstitute\\Repository\\Interface\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T07:09:03.469Z"
+              "WhenOpened": "2024-06-22T07:09:03.469Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
-              "RelativeToolTip": "EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAADYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T10:00:21.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "ExamsController.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\ExamsController.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\ExamsController.cs",
               "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\ExamsController.cs",
               "RelativeToolTip": "EducationalInstitute\\Controllers\\ExamsController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA4AAAA0AAAA",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAAAKcAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T09:45:28.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "SClassesController.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SClassesController.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\SClassesController.cs",
               "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SClassesController.cs",
               "RelativeToolTip": "EducationalInstitute\\Controllers\\SClassesController.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAAADoAAAAsAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T06:16:57.216Z"
+              "WhenOpened": "2024-06-21T06:16:57.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -293,9 +261,98 @@
               "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\SectionsController.cs",
               "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SectionsController.cs",
               "RelativeToolTip": "EducationalInstitute\\Controllers\\SectionsController.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAADoAAAAMAAAA",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAAAJ8AAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T06:18:39.597Z"
+              "WhenOpened": "2024-06-21T06:18:39.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Edit.cshtml",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Edit.cshtml",
+              "RelativeToolTip": "EducationalInstitute\\Views\\Fees\\Edit.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T10:20:58.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Details.cshtml",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Details.cshtml",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Details.cshtml",
+              "RelativeToolTip": "EducationalInstitute\\Views\\Fees\\Details.cshtml",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAAC8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T10:21:19.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FeesController.cs",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\FeesController.cs",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\FeesController.cs",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\FeesController.cs",
+              "RelativeToolTip": "EducationalInstitute\\Controllers\\FeesController.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAAAKYAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:44:49.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "EducationalInstitute\\Controllers\\StudentsController.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAApwKQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:52:33.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Index.cshtml",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Index.cshtml",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Index.cshtml",
+              "RelativeToolTip": "EducationalInstitute\\Views\\Fees\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-21T10:20:36.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubjectsController.cs",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SubjectsController.cs",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\SubjectsController.cs",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SubjectsController.cs",
+              "RelativeToolTip": "EducationalInstitute\\Controllers\\SubjectsController.cs",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKwAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T09:44:13.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeachersController.cs",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\TeachersController.cs",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\TeachersController.cs",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\TeachersController.cs",
+              "RelativeToolTip": "EducationalInstitute\\Controllers\\TeachersController.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAlwJoAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T06:52:02.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -311,43 +368,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Index.cshtml",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Index.cshtml",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Index.cshtml",
-              "RelativeToolTip": "EducationalInstitute\\Views\\Fees\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAADoAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T10:20:36.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Edit.cshtml",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Edit.cshtml",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Edit.cshtml",
-              "RelativeToolTip": "EducationalInstitute\\Views\\Fees\\Edit.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADEAAAAVAAAA",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
+              "RelativeToolTip": "EducationalInstitute\\Views\\Subjects\\Edit.cshtml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAADYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T10:20:58.04Z"
+              "WhenOpened": "2024-06-21T10:00:21.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Details.cshtml",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Details.cshtml",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Details.cshtml",
-              "RelativeToolTip": "EducationalInstitute\\Views\\Fees\\Details.cshtml",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAAC8AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-21T10:21:19.508Z"
+              "DocumentIndex": 11,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
+              "RelativeToolTip": "EducationalInstitute\\Repository\\Interface\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T07:11:17.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Program.cs",
+              "RelativeDocumentMoniker": "EducationalInstitute\\Program.cs",
+              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Program.cs",
+              "RelativeToolTip": "EducationalInstitute\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T07:20:38.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Delete.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Delete.cshtml",
@@ -359,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Fees\\Create.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Fees\\Create.cshtml",
@@ -371,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Index.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Subjects\\Index.cshtml",
@@ -383,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\SClasses\\Index.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\SClasses\\Index.cshtml",
@@ -395,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\SClasses\\Create.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\SClasses\\Create.cshtml",
@@ -407,31 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FeesController.cs",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\FeesController.cs",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\FeesController.cs",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\FeesController.cs",
-              "RelativeToolTip": "EducationalInstitute\\Controllers\\FeesController.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAAAGwAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T09:44:49.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SubjectsController.cs",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SubjectsController.cs",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\SubjectsController.cs",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\SubjectsController.cs",
-              "RelativeToolTip": "EducationalInstitute\\Controllers\\SubjectsController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAAEYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T09:44:13.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Fees.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Models\\Fees.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Models\\Fees.cs",
@@ -443,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Students\\Create.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Students\\Create.cshtml",
@@ -455,19 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\StudentsController.cs",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "EducationalInstitute\\Controllers\\StudentsController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAEUAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T06:52:33.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Models\\Student.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Models\\Student.cs",
@@ -479,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Subject.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Models\\Subject.cs",
@@ -491,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Details.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Subjects\\Details.cshtml",
@@ -503,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Section.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Models\\Section.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Models\\Section.cs",
@@ -515,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "SClass.cs",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Models\\SClass.cs",
               "RelativeDocumentMoniker": "EducationalInstitute\\Models\\SClass.cs",
@@ -527,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Delete.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Subjects\\Delete.cshtml",
@@ -539,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Subjects\\Create.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Subjects\\Create.cshtml",
@@ -551,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\SClasses\\Edit.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\SClasses\\Edit.cshtml",
@@ -563,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\SClasses\\Delete.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\SClasses\\Delete.cshtml",
@@ -575,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Sections\\Create.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Sections\\Create.cshtml",
@@ -587,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Sections\\Index.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Sections\\Index.cshtml",
@@ -599,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Sections\\Edit.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Sections\\Edit.cshtml",
@@ -611,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Sections\\Details.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Sections\\Details.cshtml",
@@ -623,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\Sections\\Delete.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\Sections\\Delete.cshtml",
@@ -632,18 +653,6 @@
               "ViewState": "AQIAABoAAAAAAAAAAAAAADAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-21T09:55:34.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "TeachersController.cs",
-              "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\TeachersController.cs",
-              "RelativeDocumentMoniker": "EducationalInstitute\\Controllers\\TeachersController.cs",
-              "ToolTip": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Controllers\\TeachersController.cs",
-              "RelativeToolTip": "EducationalInstitute\\Controllers\\TeachersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T06:52:02.472Z"
             },
             {
               "$type": "Document",
@@ -659,7 +668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\d2kss products\\EducationalInstitute\\EducationalInstitute\\Views\\SClasses\\Details.cshtml",
               "RelativeDocumentMoniker": "EducationalInstitute\\Views\\SClasses\\Details.cshtml",

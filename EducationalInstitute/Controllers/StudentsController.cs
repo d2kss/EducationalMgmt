@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class StudentsController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public StudentsController(EducationalInstituteContext context)
+        public StudentsController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,7 +23,7 @@ namespace EducationalInstitute.Controllers
         // GET: Students
         public async Task<IActionResult> Index()
         {
-            var educationalInstituteContext = _context.Student.Include(s => s.SClass).Include(s => s.Section).Include(s => s.Teacher);
+            var educationalInstituteContext = _context.StudentRepository.Include(s => s.SClass).Include(s => s.Section).Include(s => s.Teacher);
             return View(await educationalInstituteContext.ToListAsync());
         }
 
@@ -34,7 +35,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
+            var student = await _context.StudentRepository
                 .Include(s => s.SClass)
                 .Include(s => s.Section)
                 .Include(s => s.Teacher)
@@ -50,9 +51,9 @@ namespace EducationalInstitute.Controllers
         // GET: Students/Create
         public IActionResult Create()
         {
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName");
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName");
-            ViewData["TeacherId"] = new SelectList(_context.Teacher, "TeacherId", "Designation");
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName");
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName");
+            ViewData["TeacherId"] = new SelectList(_context.TeacherRepository.GetAll(), "TeacherId", "Designation");
             return View();
         }
 
@@ -68,13 +69,13 @@ namespace EducationalInstitute.Controllers
                 student.IsActive = 'Y';
                 student.CreatedBy = "Admin";
                 student.CreatedDate= DateTime.Now;
-                _context.Add(student);
-                await _context.SaveChangesAsync();
+                _context.StudentRepository.Add(student);
+                _context.Save();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName", student.ClassID);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", student.SectionId);
-            ViewData["TeacherId"] = new SelectList(_context.Teacher, "TeacherId", "Designation", student.TeacherId);
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", student.ClassID);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", student.SectionId);
+            ViewData["TeacherId"] = new SelectList(_context.TeacherRepository.GetAll(), "TeacherId", "Designation", student.TeacherId);
             return View(student);
         }
 
@@ -86,14 +87,14 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student.FindAsync(id);
+            var student = _context.StudentRepository.Get(u=>u.StudentId==id);
             if (student == null)
             {
                 return NotFound();
             }
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName", student.ClassID);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", student.SectionId);
-            ViewData["TeacherId"] = new SelectList(_context.Teacher, "TeacherId", "Designation", student.TeacherId);
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", student.ClassID);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", student.SectionId);
+            ViewData["TeacherId"] = new SelectList(_context.TeacherRepository.GetAll(), "TeacherId", "Designation", student.TeacherId);
             return View(student);
         }
 
@@ -113,8 +114,8 @@ namespace EducationalInstitute.Controllers
             {
                 try
                 {
-                    _context.Update(student);
-                    await _context.SaveChangesAsync();
+                    _context.StudentRepository.Update(student);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -129,9 +130,9 @@ namespace EducationalInstitute.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName", student.ClassID);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", student.SectionId);
-            ViewData["TeacherId"] = new SelectList(_context.Teacher, "TeacherId", "Designation", student.TeacherId);
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", student.ClassID);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", student.SectionId);
+            ViewData["TeacherId"] = new SelectList(_context.TeacherRepository.GetAll(), "TeacherId", "Designation", student.TeacherId);
             return View(student);
         }
 
@@ -143,7 +144,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var student = await _context.Student
+            var student = await _context.StudentRepository
                 .Include(s => s.SClass)
                 .Include(s => s.Section)
                 .Include(s => s.Teacher)
@@ -161,19 +162,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var student = await _context.Student.FindAsync(id);
+            var student =  _context.StudentRepository.Get(u=>u.TeacherId==id);
             if (student != null)
             {
-                _context.Student.Remove(student);
+                _context.StudentRepository.Remove(student);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool StudentExists(int id)
         {
-            return _context.Student.Any(e => e.StudentId == id);
+            return _context.StudentRepository.Get(e => e.StudentId == id).StudentId>0;
         }
     }
 }

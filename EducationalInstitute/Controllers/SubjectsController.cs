@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class SubjectsController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public SubjectsController(EducationalInstituteContext context)
+        public SubjectsController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,7 +23,7 @@ namespace EducationalInstitute.Controllers
         // GET: Subjects
         public async Task<IActionResult> Index()
         {
-            var educationalInstituteContext = _context.Subject.Include(s => s.SClass).Include(s => s.Section);
+            var educationalInstituteContext = _context.SubjectRepository.Include(s => s.SClass).Include(s => s.Section);
             return View(await educationalInstituteContext.ToListAsync());
         }
 
@@ -34,7 +35,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var subject = await _context.Subject
+            var subject = await _context.SubjectRepository
                 .Include(s => s.SClass)
                 .Include(s => s.Section)
                 .FirstOrDefaultAsync(m => m.subjectId == id);
@@ -49,8 +50,8 @@ namespace EducationalInstitute.Controllers
         // GET: Subjects/Create
         public IActionResult Create()
         {
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName");
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName");
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName");
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName");
             return View();
         }
 
@@ -66,12 +67,12 @@ namespace EducationalInstitute.Controllers
                 subject.IsActive = 'Y';
                 subject.CreatedBy = "Admin";
                 subject.CreatedDate=DateTime.Now;
-                _context.Add(subject);
-                await _context.SaveChangesAsync();
+                _context.SubjectRepository.Add(subject);
+                _context.Save();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName", subject.ClassID);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", subject.SectionId);
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", subject.ClassID);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", subject.SectionId);
             return View(subject);
         }
 
@@ -83,13 +84,13 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var subject = await _context.Subject.FindAsync(id);
+            var subject = _context.SubjectRepository.Get(u=>u.subjectId==id);
             if (subject == null)
             {
                 return NotFound();
             }
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName", subject.ClassID);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", subject.SectionId);
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", subject.ClassID);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", subject.SectionId);
             return View(subject);
         }
 
@@ -111,8 +112,8 @@ namespace EducationalInstitute.Controllers
                 {
                     subject.UpdatedBy = "Admin";
                     subject.UpdatedDate = DateTime.Now;
-                    _context.Update(subject);
-                    await _context.SaveChangesAsync();
+                    _context.SubjectRepository.Update(subject);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -127,8 +128,8 @@ namespace EducationalInstitute.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassID"] = new SelectList(_context.SClass, "ClassId", "ClassName", subject.ClassID);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", subject.SectionId);
+            ViewData["ClassID"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", subject.ClassID);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", subject.SectionId);
             return View(subject);
         }
 
@@ -140,7 +141,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var subject = await _context.Subject
+            var subject = await _context.SubjectRepository
                 .Include(s => s.SClass)
                 .Include(s => s.Section)
                 .FirstOrDefaultAsync(m => m.subjectId == id);
@@ -157,19 +158,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var subject = await _context.Subject.FindAsync(id);
+            var subject = _context.SubjectRepository.Get(u => u.subjectId == id);
             if (subject != null)
             {
-                _context.Subject.Remove(subject);
+                _context.SubjectRepository.Remove(subject);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SubjectExists(int id)
         {
-            return _context.Subject.Any(e => e.subjectId == id);
+            return _context.SubjectRepository.Get(e => e.subjectId == id).subjectId>0;
         }
     }
 }

@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class TeachersController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public TeachersController(EducationalInstituteContext context)
+        public TeachersController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,7 +23,7 @@ namespace EducationalInstitute.Controllers
         // GET: Teachers
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Teacher.ToListAsync());
+            return View(_context.TeacherRepository.GetAll().ToList());
         }
 
         // GET: Teachers/Details/5
@@ -33,8 +34,8 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var teacher = await _context.Teacher
-                .FirstOrDefaultAsync(m => m.TeacherId == id);
+            var teacher =  _context.TeacherRepository
+                .Get(m => m.TeacherId == id);
             if (teacher == null)
             {
                 return NotFound();
@@ -58,8 +59,8 @@ namespace EducationalInstitute.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(teacher);
-                await _context.SaveChangesAsync();
+                _context.TeacherRepository.Add(teacher);
+                _context.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(teacher);
@@ -73,7 +74,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var teacher = await _context.Teacher.FindAsync(id);
+            var teacher = _context.TeacherRepository.Get(u=>u.TeacherId==id);
             if (teacher == null)
             {
                 return NotFound();
@@ -97,8 +98,8 @@ namespace EducationalInstitute.Controllers
             {
                 try
                 {
-                    _context.Update(teacher);
-                    await _context.SaveChangesAsync();
+                    _context.TeacherRepository.Update(teacher);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -124,8 +125,8 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var teacher = await _context.Teacher
-                .FirstOrDefaultAsync(m => m.TeacherId == id);
+            var teacher = _context.TeacherRepository
+                .Get(m => m.TeacherId == id);
             if (teacher == null)
             {
                 return NotFound();
@@ -139,19 +140,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var teacher = await _context.Teacher.FindAsync(id);
+            var teacher =  _context.TeacherRepository.Get(u=>u.TeacherId==id);
             if (teacher != null)
             {
-                _context.Teacher.Remove(teacher);
+                _context.TeacherRepository.Remove(teacher);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool TeacherExists(int id)
         {
-            return _context.Teacher.Any(e => e.TeacherId == id);
+            return _context.TeacherRepository.Get(e => e.TeacherId == id).TeacherId>0;
         }
     }
 }

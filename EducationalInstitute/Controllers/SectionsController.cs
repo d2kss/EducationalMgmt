@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class SectionsController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public SectionsController(EducationalInstituteContext context)
+        public SectionsController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,7 +23,7 @@ namespace EducationalInstitute.Controllers
         // GET: Sections
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Section.ToListAsync());
+            return View(_context.SectionRepository.GetAll().ToList());
         }
 
         // GET: Sections/Details/5
@@ -33,8 +34,8 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var section = await _context.Section
-                .FirstOrDefaultAsync(m => m.SectionId == id);
+            var section = _context.SectionRepository
+                .Get(m => m.SectionId == id);
             if (section == null)
             {
                 return NotFound();
@@ -61,8 +62,8 @@ namespace EducationalInstitute.Controllers
                 section.IsActive = 'Y';
                 section.CreatedBy = "Admin";
                 section.CreatedDate = DateTime.Now;
-                _context.Add(section);
-                await _context.SaveChangesAsync();
+                _context.SectionRepository.Add(section);
+                _context.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(section);
@@ -76,7 +77,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var section = await _context.Section.FindAsync(id);
+            var section = _context.SectionRepository.Get(u=>u.SectionId==id);
             if (section == null)
             {
                 return NotFound();
@@ -102,8 +103,8 @@ namespace EducationalInstitute.Controllers
                 {
                     section.UpdatedBy = "Admin";
                     section.UpdatedDate = DateTime.Now;
-                    _context.Update(section);
-                    await _context.SaveChangesAsync();
+                    _context.SectionRepository.Update(section);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -129,8 +130,8 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var section = await _context.Section
-                .FirstOrDefaultAsync(m => m.SectionId == id);
+            var section =  _context.SectionRepository
+                .Get(m => m.SectionId == id);
             if (section == null)
             {
                 return NotFound();
@@ -144,19 +145,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var section = await _context.Section.FindAsync(id);
+            var section = _context.SectionRepository.Get(u=>u.SectionId==id);
             if (section != null)
             {
-                _context.Section.Remove(section);
+                _context.SectionRepository.Remove(section);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool SectionExists(int id)
         {
-            return _context.Section.Any(e => e.SectionId == id);
+            return _context.SectionRepository.Get(e => e.SectionId == id).SectionId>0;
         }
     }
 }

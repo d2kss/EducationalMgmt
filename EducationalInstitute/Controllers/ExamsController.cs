@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class ExamsController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public ExamsController(EducationalInstituteContext context)
+        public ExamsController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,8 +23,8 @@ namespace EducationalInstitute.Controllers
         // GET: Exams
         public async Task<IActionResult> Index()
         {
-            var educationalInstituteContext = _context.Exam.Include(e => e.SClass).Include(e => e.Section);
-            return View(await educationalInstituteContext.ToListAsync());
+            List<Exam> lstExams = _context.ExamRepository.Include(e => e.SClass).Include(e => e.Section).ToList();
+            return View(lstExams);
         }
 
         // GET: Exams/Details/5
@@ -34,7 +35,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var exam = await _context.Exam
+            var exam = await _context.ExamRepository
                 .Include(e => e.SClass)
                 .Include(e => e.Section)
                 .FirstOrDefaultAsync(m => m.ExamId == id);
@@ -49,8 +50,8 @@ namespace EducationalInstitute.Controllers
         // GET: Exams/Create
         public IActionResult Create()
         {
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName");
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName");
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName");
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName");
             return View();
         }
 
@@ -63,12 +64,12 @@ namespace EducationalInstitute.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(exam);
-                await _context.SaveChangesAsync();
+                _context.ExamRepository.Add(exam);
+                _context.Save();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName", exam.ClassId);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", exam.SectionId);
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", exam.ClassId);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", exam.SectionId);
             return View(exam);
         }
 
@@ -80,13 +81,13 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var exam = await _context.Exam.FindAsync(id);
+            var exam = _context.ExamRepository.Get(u=>u.ExamId==id);
             if (exam == null)
             {
                 return NotFound();
             }
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName", exam.ClassId);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", exam.SectionId);
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", exam.ClassId);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", exam.SectionId);
             return View(exam);
         }
 
@@ -106,8 +107,8 @@ namespace EducationalInstitute.Controllers
             {
                 try
                 {
-                    _context.Update(exam);
-                    await _context.SaveChangesAsync();
+                    _context.ExamRepository.Update(exam);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -122,8 +123,8 @@ namespace EducationalInstitute.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName", exam.ClassId);
-            ViewData["SectionId"] = new SelectList(_context.Section, "SectionId", "SectionName", exam.SectionId);
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", exam.ClassId);
+            ViewData["SectionId"] = new SelectList(_context.SectionRepository.GetAll(), "SectionId", "SectionName", exam.SectionId);
             return View(exam);
         }
 
@@ -135,7 +136,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var exam = await _context.Exam
+            var exam = await _context.ExamRepository
                 .Include(e => e.SClass)
                 .Include(e => e.Section)
                 .FirstOrDefaultAsync(m => m.ExamId == id);
@@ -152,19 +153,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var exam = await _context.Exam.FindAsync(id);
+            var exam = _context.ExamRepository.Get(u => u.ExamId == id);
             if (exam != null)
             {
-                _context.Exam.Remove(exam);
+                _context.ExamRepository.Remove(exam);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ExamExists(int id)
         {
-            return _context.Exam.Any(e => e.ExamId == id);
+            return _context.ExamRepository.Get(e => e.ExamId == id).ExamId>0;
         }
     }
 }

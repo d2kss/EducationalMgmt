@@ -7,14 +7,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EducationalInstitute.Data;
 using EducationalInstitute.Models;
+using EducationalInstitute.Repository.Interface;
 
 namespace EducationalInstitute.Controllers
 {
     public class FeesController : Controller
     {
-        private readonly EducationalInstituteContext _context;
+        private readonly IUnitOfWork _context;
 
-        public FeesController(EducationalInstituteContext context)
+        public FeesController(IUnitOfWork context)
         {
             _context = context;
         }
@@ -22,7 +23,7 @@ namespace EducationalInstitute.Controllers
         // GET: Fees
         public async Task<IActionResult> Index()
         {
-            var educationalInstituteContext = _context.Fees.Include(f => f.SClass);
+            var educationalInstituteContext = _context.FeesRepository.Include(f => f.SClass);
             return View(await educationalInstituteContext.ToListAsync());
         }
 
@@ -34,7 +35,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var fees = await _context.Fees
+            var fees = await _context.FeesRepository
                 .Include(f => f.SClass)
                 .FirstOrDefaultAsync(m => m.FeesId == id);
             if (fees == null)
@@ -48,7 +49,7 @@ namespace EducationalInstitute.Controllers
         // GET: Fees/Create
         public IActionResult Create()
         {
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName");
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName");
             return View();
         }
 
@@ -64,11 +65,11 @@ namespace EducationalInstitute.Controllers
                 fees.IsActive = 'Y';
                 fees.CreatedBy = "Admin";
                 fees.CreatedDate=DateTime.Now;
-                _context.Add(fees);
-                await _context.SaveChangesAsync();
+                _context.FeesRepository.Add(fees);
+                _context.Save();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName", fees.ClassId);
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", fees.ClassId);
             return View(fees);
         }
 
@@ -80,12 +81,12 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var fees = await _context.Fees.FindAsync(id);
+            var fees = _context.FeesRepository.Get(u=>u.FeesId==id);
             if (fees == null)
             {
                 return NotFound();
             }
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName", fees.ClassId);
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", fees.ClassId);
             return View(fees);
         }
 
@@ -107,8 +108,8 @@ namespace EducationalInstitute.Controllers
                 {
                     fees.UpdatedBy = "Admin";
                     fees.UpdatedDate= DateTime.Now;
-                    _context.Update(fees);
-                    await _context.SaveChangesAsync();
+                    _context.FeesRepository.Update(fees);
+                    _context.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -123,7 +124,7 @@ namespace EducationalInstitute.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClassId"] = new SelectList(_context.SClass, "ClassId", "ClassName", fees.ClassId);
+            ViewData["ClassId"] = new SelectList(_context.ClassRepository.GetAll(), "ClassId", "ClassName", fees.ClassId);
             return View(fees);
         }
 
@@ -135,7 +136,7 @@ namespace EducationalInstitute.Controllers
                 return NotFound();
             }
 
-            var fees = await _context.Fees
+            var fees = await _context.FeesRepository
                 .Include(f => f.SClass)
                 .FirstOrDefaultAsync(m => m.FeesId == id);
             if (fees == null)
@@ -151,19 +152,19 @@ namespace EducationalInstitute.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var fees = await _context.Fees.FindAsync(id);
+            var fees = _context.FeesRepository.Get(u => u.FeesId == id);
             if (fees != null)
             {
-                _context.Fees.Remove(fees);
+                _context.FeesRepository.Remove(fees);
             }
 
-            await _context.SaveChangesAsync();
+            _context.Save();
             return RedirectToAction(nameof(Index));
         }
 
         private bool FeesExists(int id)
         {
-            return _context.Fees.Any(e => e.FeesId == id);
+            return _context.FeesRepository.Get(e => e.FeesId == id).FeesId>0;
         }
     }
 }
